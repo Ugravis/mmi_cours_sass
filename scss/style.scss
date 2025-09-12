@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+$primary-blue: #008eec;
+$light-blue: #37afff;
+$primary-white: #fff;
+$primary-font-size: 15px;
+$mini-txt-size: 12px;
+$grey: #7a7a7a;
+$transition: all .1s;
+
+body {
+  font-family: 'Source Code Pro', sans-serif;
+
+  header {
+    h3 {
+      color: $primary-blue;
+    }
+  }
+
+  #sec-1 {
+    border: 1px solid $grey;
+  }
+
+  #sec-2 {
+    display: flex;
+    gap: 30px;
+
+    button {
+      background-color: $primary-blue;
+      color: $primary-white;
+      border: none;
+      font-size: 13px;
+
+      &:hover {
+        background-color: $light-blue;
+        transition: $transition;
+      }
+    }
+  }
+
+    footer {
+      margin-top: 20px;
+
+      a {
+        color: $grey;
+        text-decoration: underline;
+        font-size: $mini-txt-size;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+  p {
+    font-size: $primary-font-size;
+
+    &.p-2 {
+      text-decoration: underline;
+    }
+
+    &.p-3 {
+      color: red;
+    }
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
