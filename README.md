@@ -15,7 +15,7 @@
 
 ## Several SCSS files
 
-/scss folder : `/layout.scss` (général / variables), `/page.scss` (custom), `/style.scss`.  
+**/scss** folder : `/layout.scss` (général / variables), `/page.scss` (custom), `/style.scss`.  
 ```css
 // style.scss
 
