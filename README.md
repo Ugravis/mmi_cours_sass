@@ -7,6 +7,12 @@
 
 Quelque soit le nb de fichiers `scss`, il n'y aura tjr qu'un seul fichier CSS compilé. 
 
+## Spéciaux
+
+- `&` : sélectioner une classe / id. 
+- `$` : utiliser les variable. 
+- `@` : code logique (if, include, import, etc)
+
 ## Notes
 
 **Tp noté** : unqmt le dernier. 

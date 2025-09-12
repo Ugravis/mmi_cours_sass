@@ -3,4 +3,8 @@ body {
   font-family: "Source Code Pro", sans-serif;
 }
 
+header h3 {
+  color: blue;
+}
+
 /*# sourceMappingURL=styles.css.map */
