@@ -1,0 +1,20 @@
+// @use 'layout';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 5% 0px 5%;
+
+  >a {
+    color: blue;
+  }
+
+  nav {
+    display: flex;
+    gap: 25px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
