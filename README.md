@@ -1,3 +1,5 @@
+# SASS / SCSS
+
 ## Commands
 
 - `npm i sass` -> installation. 
@@ -32,16 +34,31 @@
 ## Project tree
 
 ```
-dev_front_et_integration_code
+dev_front_integration_code
 ├─ .DS_Store
-├─ css
-│  ├─ style.css
-│  └─ style.css.map
-├─ index.html
-└─ scss
-   ├─ _home.scss
-   ├─ _layout.scss
-   └─ style.scss
+├─ example
+│  ├─ css
+│  │  ├─ style.css
+│  │  └─ style.css.map
+│  ├─ index.html
+│  └─ scss
+│     ├─ _home.scss
+│     ├─ _layout.scss
+│     └─ style.scss
+└─ tp_1
+   ├─ contact.html
+   ├─ css
+   │  ├─ style.css
+   │  └─ style.css.map
+   ├─ index.html
+   └─ scss
+      ├─ _contact.scss
+      ├─ _footer.scss
+      ├─ _header.scss
+      ├─ _home.scss
+      ├─ _layout.scss
+      ├─ _reset.scss
+      └─ style.scss
 
 ```
 
