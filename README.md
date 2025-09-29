@@ -15,6 +15,11 @@
 - `$` : utiliser les variable. 
 - `@` : code logique (if, include, import, etc)
 
+## Unique functions
+
+- `lighten($color, $amount)` : éclaircit une couleur selon un %. 
+- `darken($color, $amount)` : assombrit une couleur selon un %. 
+
 ## Several SCSS files
 
 **/scss** folder : `/layout.scss` (général / variables), `/page.scss` (custom), `/style.scss`.  
