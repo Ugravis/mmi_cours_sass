@@ -1,0 +1,67 @@
+@use 'sass:color';
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+$primary-blue: #1919FF;
+$darken-blue: color.adjust($primary-blue, $lightness: -30%);
+$code-orange: #d68b00;
+$darken-code-orange: color.scale($code-orange, $lightness: 80%);
+
+body {
+  font-family: 'Source Code Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin: 0px 5%;
+  }
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.btn, input[type="submit"] {
+  border: 2px solid $primary-blue;
+  color: $primary-blue;
+  border-radius: 5px;
+  padding: 6px 10px;
+  background-color: transparent;
+
+  cursor: pointer;
+  transition: 0.15s;
+
+  &:hover {
+    background-color: $primary-blue;
+    color: white;
+  }
+}
+
+code {
+  color: $code-orange;
+  background-color: $darken-code-orange;
+
+  &:hover {
+    background-color: $darken-code-orange;
+  }
+}
+
+input, textarea {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 6px 9px;
+}
+
+%box-shadow {
+  box-shadow: 5px 5px 5px #0000003c;
+}
+
+@mixin background-image($image) {
+  background-image: url(#{$image});
+  background-size: cover; 
+}
