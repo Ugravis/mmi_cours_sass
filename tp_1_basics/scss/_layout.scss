@@ -1,6 +1,10 @@
+@use 'sass:color';
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 $primary-blue: #1919FF;
+$darken-blue: color.adjust($primary-blue, $lightness: -30%);
+$code-orange: #d68b00;
+$darken-code-orange: color.scale($code-orange, $lightness: 80%);
 
 body {
   font-family: 'Source Code Pro', sans-serif;
@@ -27,9 +31,10 @@ h1 {
   color: $primary-blue;
   border-radius: 5px;
   padding: 6px 10px;
-  transition: 0.15s;
   background-color: transparent;
+
   cursor: pointer;
+  transition: 0.15s;
 
   &:hover {
     background-color: $primary-blue;
@@ -38,8 +43,12 @@ h1 {
 }
 
 code {
-  background-color: rgb(255, 242, 215);
-  color: rgb(214, 139, 0);
+  color: $code-orange;
+  background-color: $darken-code-orange;
+
+  &:hover {
+    background-color: $darken-code-orange;
+  }
 }
 
 input, textarea {

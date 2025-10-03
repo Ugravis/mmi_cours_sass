@@ -173,9 +173,9 @@ h1 {
   color: #1919FF;
   border-radius: 5px;
   padding: 6px 10px;
-  transition: 0.15s;
   background-color: transparent;
   cursor: pointer;
+  transition: 0.15s;
 }
 .btn:hover, input[type=submit]:hover {
   background-color: #1919FF;
@@ -183,8 +183,11 @@ h1 {
 }
 
 code {
-  background-color: rgb(255, 242, 215);
-  color: rgb(214, 139, 0);
+  color: #d68b00;
+  background-color: rgb(255, 234.2523364486, 195.8);
+}
+code:hover {
+  background-color: rgb(255, 234.2523364486, 195.8);
 }
 
 input, textarea {
