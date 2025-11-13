@@ -1,0 +1,25 @@
+header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 30px;
+
+  .menu-mobile {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &>div {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+}
