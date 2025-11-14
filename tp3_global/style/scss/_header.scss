@@ -8,6 +8,7 @@ header {
 
   .menu-mobile {
     display: none;
+    cursor: pointer;
   }
 
   nav {
@@ -25,6 +26,7 @@ header {
 
       a {
         transition: $transition-time-default;
+        white-space: nowrap;
 
         &:hover {
           color: $primary-green-default;
@@ -32,4 +34,35 @@ header {
       }
     }
   }
+
+  @media (max-width: 900px) {
+    background-color: $neutral-white-darker !important;
+    
+
+    .menu-mobile {
+      display: flex;
+      justify-content: center;
+      background-color: $neutral-white-darker;
+    }
+
+    nav {
+      flex-direction: column;
+      background-color: $neutral-white-darker;
+      min-height: 100vh;
+      width: 100vw;
+      display: none;
+
+      &>div {
+        flex-direction: column;
+      }
+
+      .header-logo {
+        display: none;
+      }
+    }
+  }
+}
+
+.active-mobile-nav {
+  display: flex !important;
 }

@@ -180,6 +180,7 @@ header {
 }
 header .menu-mobile {
   display: none;
+  cursor: pointer;
 }
 header nav {
   display: flex;
@@ -196,9 +197,37 @@ header nav > div {
 }
 header nav > div a {
   transition: 0.2s;
+  white-space: nowrap;
 }
 header nav > div a:hover {
   color: #4eb499;
+}
+@media (max-width: 900px) {
+  header {
+    background-color: rgb(244.8, 244.8, 244.8) !important;
+  }
+  header .menu-mobile {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(244.8, 244.8, 244.8);
+  }
+  header nav {
+    flex-direction: column;
+    background-color: rgb(244.8, 244.8, 244.8);
+    min-height: 100vh;
+    width: 100vw;
+    display: none;
+  }
+  header nav > div {
+    flex-direction: column;
+  }
+  header nav .header-logo {
+    display: none;
+  }
+}
+
+.active-mobile-nav {
+  display: flex !important;
 }
 
 body, input {
@@ -213,6 +242,7 @@ body {
 
 footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 75px 15vw;
   background-color: rgb(244.8, 244.8, 244.8);
@@ -237,6 +267,27 @@ footer > :nth-child(3) {
   gap: 10px;
 }
 
+p {
+  text-align: center;
+  line-height: 2.2;
+  font-size: 13px;
+  margin: 0;
+}
+
+.home .gallery .gallery-block .block-item .hover-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #4eb499;
+  transition: 0.2s;
+  opacity: 0;
+}
+
 body, input {
   font-family: "Poppins";
 }
@@ -258,20 +309,24 @@ body {
 .home .introduction, .home .reviews {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 75px 15vw;
   gap: 20px;
+  padding: 75px 15vw;
   background-color: rgb(244.8, 244.8, 244.8);
 }
 .home .grid-presentation .cont-logo {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 0;
 }
 .home .grid-presentation .cont-desc .presentation-desc {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   padding: 50px;
@@ -347,7 +402,6 @@ body {
 }
 .home .gallery {
   display: flex;
-  background-color: yellow;
   height: 450px;
 }
 .home .gallery .gallery-block {
@@ -372,18 +426,6 @@ body {
   position: relative;
   cursor: pointer;
 }
-.home .gallery .gallery-block .block-item .hover-item {
-  position: absolute;
-  background-color: #4eb499;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s ease;
-}
 .home .gallery .gallery-block .block-item .hover-item:hover {
   opacity: 0.8;
 }
@@ -392,25 +434,29 @@ body {
   height: 23.5px;
 }
 .home .gallery .gallery-block .block-item .hover-item p {
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #fff;
-  letter-spacing: 2px;
-}
-.home .discover {
-  background-color: #272727;
-  display: flex;
-  justify-content: center;
-  padding: 60px 0px;
-}
-.home .discover a {
-  color: #fff;
-  padding: 10px 35px;
-  border: 1px solid #fff;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 2px;
   font-size: 11px;
+  color: #fff;
+}
+.home .discover {
+  background-color: #272727;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 60px 0px;
+}
+.home .discover a {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 11px;
+  color: #fff;
+  padding: 10px 35px;
+  border: 1px solid #fff;
   transition: 0.2s;
 }
 .home .discover a:hover {
@@ -418,11 +464,12 @@ body {
   color: #272727;
 }
 .home .newsletter {
-  padding: 75px 15vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 75px 15vw;
 }
 .home .newsletter p {
   font-style: italic;
@@ -461,14 +508,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 2px;
-  font-size: 15px;
-}
-
-p {
-  text-align: center;
-  line-height: 2.2;
-  font-size: 13px;
-  margin: 0px;
+  font-size: 11px;
 }
 
 /*# sourceMappingURL=style.css.map */

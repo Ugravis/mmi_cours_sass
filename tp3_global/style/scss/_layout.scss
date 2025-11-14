@@ -1,6 +1,8 @@
 @use 'sass:color';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+// Variables
+
 $primary-green-default: #4eb499;
 $primary-green-darker: color.adjust($primary-green-default, $lightness: -10%);
 
@@ -11,6 +13,53 @@ $neutral-white-darker: color.adjust($neutral-white-default, $lightness: -4%);
 $neutral-white-darker-2: color.adjust($neutral-white-default, $lightness: -15%);
 
 $transition-time-default: 0.2s;
+
+// Mixins
+
+@mixin flex-center($direction: row, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin section-layout($bg: null) {
+  @include flex-center(column, 20px);
+  padding: 75px 15vw;
+
+  @if $bg != null {
+    background-color: $bg;
+  }
+}
+
+@mixin label-uppercase($size: 11px, $spacing: 2px, $weight: 500) {
+  text-transform: uppercase;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+  font-size: $size;
+}
+
+// Placeholders
+
+%text-body {
+  text-align: center;
+  line-height: 2.2;
+  font-size: 13px;
+  margin: 0;
+}
+
+%card-hover-overlay {
+  @include flex-center(column, 10px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $primary-green-default;
+  transition: $transition-time-default;
+  opacity: 0;
+}
+
+// Style global
 
 body, input {
   font-family: 'Poppins';
