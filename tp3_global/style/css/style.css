@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -153,6 +156,22 @@ body, input {
   font-family: "Poppins";
 }
 
+body {
+  max-width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body, input {
+  font-family: "Poppins";
+}
+
+body {
+  max-width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 header {
   position: absolute;
   left: 50%;
@@ -175,12 +194,28 @@ header nav > div {
   align-items: center;
   gap: 30px;
 }
+header nav > div a {
+  transition: 0.2s;
+}
+header nav > div a:hover {
+  color: #4eb499;
+}
+
+body, input {
+  font-family: "Poppins";
+}
+
+body {
+  max-width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+}
 
 footer {
   display: flex;
   justify-content: space-between;
   padding: 75px 15vw;
-  background-color: #f2f2f2;
+  background-color: rgb(244.8, 244.8, 244.8);
 }
 footer > :nth-child(1) p {
   text-align: left;
@@ -202,6 +237,16 @@ footer > :nth-child(3) {
   gap: 10px;
 }
 
+body, input {
+  font-family: "Poppins";
+}
+
+body {
+  max-width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 .home .banner {
   background-image: url("../../images/content/img-ban.jpg");
   height: 100vh;
@@ -216,7 +261,7 @@ footer > :nth-child(3) {
   align-items: center;
   padding: 75px 15vw;
   gap: 20px;
-  background-color: #f2f2f2;
+  background-color: rgb(244.8, 244.8, 244.8);
 }
 .home .grid-presentation .cont-logo {
   display: flex;
@@ -251,7 +296,7 @@ footer > :nth-child(3) {
 .home .grid-presentation .cont-desc hr {
   height: 2px;
   border: none;
-  background-color: #e8e8e8;
+  background-color: rgb(244.8, 244.8, 244.8);
   width: 20%;
 }
 .home .grid-presentation .grid-line {
@@ -281,7 +326,7 @@ footer > :nth-child(3) {
   font-style: italic;
 }
 .home .reviews span {
-  color: #acacac;
+  color: rgb(216.75, 216.75, 216.75);
 }
 .home .reviews span.review-sep {
   margin: 0px 5px;
@@ -293,12 +338,12 @@ footer > :nth-child(3) {
 .home .reviews .review-dots div {
   width: 7px;
   height: 7px;
-  border: 1px solid #ababab;
+  border: 1px solid rgb(216.75, 216.75, 216.75);
   border-radius: 100px;
   cursor: pointer;
 }
 .home .reviews .review-dots div.dot-selected {
-  background-color: #ababab;
+  background-color: rgb(216.75, 216.75, 216.75);
 }
 .home .gallery {
   display: flex;
@@ -329,7 +374,7 @@ footer > :nth-child(3) {
 }
 .home .gallery .gallery-block .block-item .hover-item {
   position: absolute;
-  background-color: rgb(78, 180, 153);
+  background-color: #4eb499;
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -389,22 +434,27 @@ footer > :nth-child(3) {
   gap: 5px;
 }
 .home .newsletter form input[type=email] {
-  border: 1px solid #d1d1d1;
+  border: 1px solid rgb(216.75, 216.75, 216.75);
   padding: 0px 20px;
   height: 100%;
   flex-grow: 1;
 }
 .home .newsletter form input[type=email]::placeholder {
   font-style: italic;
-  color: #d1d1d1;
+  color: rgb(216.75, 216.75, 216.75);
 }
 .home .newsletter form input[type=submit] {
-  background-color: rgb(78, 180, 153);
+  background-color: #4eb499;
   border: none;
   color: #fff;
   text-transform: uppercase;
   height: calc(100% + 2px);
   padding: 0px 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.home .newsletter form input[type=submit]:hover {
+  background-color: rgb(61.6071428571, 145.3928571429, 123.2142857143);
 }
 
 .presentation-title {

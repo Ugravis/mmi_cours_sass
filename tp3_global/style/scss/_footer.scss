@@ -1,8 +1,10 @@
+@import '_layout.scss';
+
 footer {
   display: flex;
   justify-content: space-between;
   padding: 75px 15vw;
-  background-color: #f2f2f2;
+  background-color: $neutral-white-darker;
 
   >:nth-child(1) {
     p {

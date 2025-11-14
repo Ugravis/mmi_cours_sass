@@ -1,6 +1,23 @@
 @use 'sass:color';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+$primary-green-default: #4eb499;
+$primary-green-darker: color.adjust($primary-green-default, $lightness: -10%);
+
+$neutral-black-default: #272727;
+
+$neutral-white-default: #fff;
+$neutral-white-darker: color.adjust($neutral-white-default, $lightness: -4%);
+$neutral-white-darker-2: color.adjust($neutral-white-default, $lightness: -15%);
+
+$transition-time-default: 0.2s;
+
 body, input {
   font-family: 'Poppins';
+}
+
+body {
+  max-width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
 }
