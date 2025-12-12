@@ -1,0 +1,76 @@
+@use '../_layout.scss' as *;
+
+#cv {
+  .cv-intro {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto;
+
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .cv-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+
+    .cv-sub {
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .cv-item {
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid $white;
+    margin-bottom: 1.6rem;
+
+    h4 {
+      margin: 0 0 0.4rem;
+      font-size: 0.95rem;
+      color: #333333;
+    }
+
+    p {
+      font-size: 0.85rem;
+    }
+
+    .cv-meta {
+      font-size: 0.8rem;
+      color: #888888;
+      display: block;
+    }
+
+    .cv-label {
+      display: inline-block;
+      margin-top: 0.35rem;
+      margin-bottom: 0.6rem;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      padding: 0.2rem 0.6rem;
+      background: $green;
+      color: $white;
+      font-weight: 600;
+    }
+  }
+}
+
+.cv-section {
+  display: flex;
+}
+
+.cv-items {
+  flex-grow: 50%;
+}
+
+.cv-text {
+  width: 250px;
+  flex-grow: 50%;
+  margin-right: 50px;
+}

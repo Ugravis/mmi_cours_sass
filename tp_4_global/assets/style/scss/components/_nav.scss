@@ -1,0 +1,51 @@
+@use '../_layout.scss' as *;
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  z-index: 20;
+
+  .nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+
+    .nav-btn {
+      display: none;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      gap: 1.8rem;
+      margin: 0;
+      padding: 0;
+
+      li a {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+        color: $light;
+        position: relative;
+        padding-bottom: 0.2rem;
+
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+  }
+
+  .nav-logo {
+    display: flex;
+    gap: 15px;
+  }
+}

@@ -1,7 +1,13 @@
 @use '_reset.scss';
+
 @use '_layout.scss';
+@use '_htmlElements.scss';
+@use '_responsive.scss';
 
-@use './components/header.scss';
-@use './components/navbar.scss';
-
-@use './sections/aboutme.scss';
+@use './components/nav.scss';
+@use './sections/hero.scss';
+@use './sections/about.scss';
+@use './sections/skills.scss';
+@use './sections/cv.scss';
+@use './sections/portfolio.scss';
+@use './sections/contact.scss';

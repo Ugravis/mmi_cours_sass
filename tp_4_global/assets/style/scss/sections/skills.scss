@@ -1,0 +1,49 @@
+@use '../_layout.scss' as *;
+
+.skills {
+  display: grid;
+  grid-template-columns: 1.1fr 1.2fr;
+  gap: 3rem;
+  align-items: flex-start;
+
+  .skills-text {
+    font-size: 16px;
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .skill {
+    margin-bottom: 1.25rem;
+
+    .skill-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .skill-line {
+      height: 20px;
+      background: #eeeeee;
+      position: relative;
+      overflow: hidden;
+
+      span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: $green;
+      }
+    }
+  }
+
+  span {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 550;
+  }
+}

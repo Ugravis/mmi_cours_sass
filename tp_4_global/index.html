@@ -1,108 +1,389 @@
 <!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web & Graphic Designer</title>
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>TP4 - Portfolio</title>
-        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/style/css/style.css">
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style/css/style.css" />
+  </head>
 
-    <body>
+  <body>
 
-  <!-- Header -->
 
-      <header style="background-image: url('./assets/images/illustrations/banner00.jpg');">
-      </header>
+<!-- Nav -->
 
-  <!-- Navbar -->
 
-      <nav>
-        <div class="brand">
-          <p class="brand-logo-txt">F</p>
-          <p class="brand-name">Focal</p>
+    <header class="hero" id="home">
+      <nav class="nav">
+        <div class="nav-inner container">
+          <div class="flex nav-logo">
+            <p class="logo-picto">F</p>
+            <div class="logo-text">Fo<span>cal</span></div>
+          </div>
+
+          <button class="nav-btn" aria-label="Menu">
+            <span class="nav-line"></span>
+            <span class="nav-line"></span>
+            <span class="nav-line"></span>
+          </button>
+
+          <ul class="nav-list">
+            <li><a href="#home" data-scroll>Home</a></li>
+            <li><a href="#about" data-scroll>About me</a></li>
+            <li><a href="#skills" data-scroll>Skills</a></li>
+            <li><a href="#resume" data-scroll>Resume</a></li>
+            <li><a href="#portfolio" data-scroll>Testimonials</a></li>
+            <li><a href="#portfolio" data-scroll>Portfolio</a></li>
+            <li><a href="#contact" data-scroll>Contact me</a></li>
+          </ul>
         </div>
-
-        <li>
-          <ul>Home</ul>
-          <ul>About me</ul>
-          <ul>Skills</ul>
-          <ul>Resume</ul>
-          <ul>Testimonials</ul>
-          <ul>Portfolio</ul>
-          <ul>Contact me</ul>
-        </li>
       </nav>
 
-  <!-- About me -->
 
-      <section id="about-me">
-        <div class="pins-box">
-          <div class="pin-card">
-            <h3>Values</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p>
-          </div>
+<!-- Header -->
 
-          <div class="pin-card">
-            <h3>Goals</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p>
-          </div>
 
-          <div class="pin-card">
-            <h3>Hobbies</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p>
-          </div>
+      <div class="hero-content container">
+        <h1 class="hero-title">Web & Graphic Designer</h1>
+        <a href="#portfolio" class="btn-light" data-scroll> View Portfolio </a>
+      </div>
+
+      <div class="hero-img">
+        <img src="./assets/images/illustrations/banner00.jpg" alt="Portrait designer" />
+      </div>
+    </header>
+
+
+<!-- Light -->
+
+
+    <main>
+      <section class="section section-light">
+        <div class="container grid-3">
+          <article class="box">
+            <h3 class="box-title">Values</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quis dolore quae perspiciatis, aliquam obcaecati. </p>
+          </article>
+          <article class="box">
+            <h3 class="box-title">Goals</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem praesentium soluta reiciendis saepe ad cumque. </p>
+          </article>
+          <article class="box">
+            <h3 class="box-title">Hobbies</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima cumque nihil voluptatibus cupiditate? </p>
+          </article>
         </div>
+      </section>
 
-        <div class="about-me-core-box">
-          <div style="background-image: url('./assets/images/illustrations/me.jpg');"></div>
 
-          <div>
-            <h3>About me</h3>
+<!-- About -->
 
-            <p>Bla bla bla</p>
 
-            <p>Bla bla bla</p>
+      <section class="section" id="about">
+        <div class="about">
+          <div class="about-img">
+            <img src="./assets/images/illustrations/me.jpg" alt="About me" />
+          </div>
 
-            <div class="about-me-cards">
-              <div>
-                <img src="./assets/images/icons/webDesign.png" alt="web_design">
+          <div class="section about-text">
+            <h2 class="title-section">About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam possimus molestiae, sequi ad, adipisci veritatis sapiente repellendus obcaecati. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellat voluptatum eaque </p>
 
+            <div class="about-cards">
+              <div class="about-card">
+                <img src="./assets/images/icons/webDesign.png" alt="webDesign">
                 <div>
-                  <h4>Web design</h4>
-                  <p>Bla bla bla</p>
+                    <h4>Web design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit amet.</p>
                 </div>
               </div>
 
-              <div>
-                <img src="./assets/images/icons/webDesign.png" alt="web_design">
-
+              <div class="about-card">
+                <img src="./assets/images/icons/graphicDesign.png" alt="webDesign">
                 <div>
-                  <h4>Web design</h4>
-                  <p>Bla bla bla</p>
+                    <h4>Graphic Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit amet.</p>
                 </div>
               </div>
 
-              <div>
-                <img src="./assets/images/icons/webDesign.png" alt="web_design">
-
+              <div class="about-card">
+                <img src="./assets/images/icons/onlineMarketing.png" alt="webDesign">
                 <div>
-                  <h4>Web design</h4>
-                  <p>Bla bla bla</p>
+                    <h4>Online marketing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit amet.</p>
                 </div>
               </div>
 
-              <div>
-                <img src="./assets/images/icons/webDesign.png" alt="web_design">
-
+              <div class="about-card">
+                <img src="./assets/images/icons/seo.png" alt="webDesign">
                 <div>
-                  <h4>Web design</h4>
-                  <p>Bla bla bla</p>
+                    <h4>SEO</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit amet.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>      
-    </body>
+      </section>
+
+
+<!-- Skills -->
+
+
+      <section class="section section-light" id="skills">
+        <div class="container skills">
+          <div class="skills-text">
+            <h2 class="title-section">My Skills</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet, modi obcaecati fuga numquam. </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, magni. </p>
+            <a href="#contact" class="btn-green" data-scroll>CONTACT ME</a>
+          </div>
+
+          <div class="skills-right">
+            <div class="skill">
+              <div class="skill-top">
+                <span>Photoshop</span>
+              </div>
+              <div class="skill-line">
+                <span style="width: 90%"></span>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-top">
+                <span>Illustrator</span>
+              </div>
+              <div class="skill-line">
+                <span style="width: 80%"></span>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-top">
+                <span>HTML / CSS</span>
+              </div>
+              <div class="skill-line">
+                <span style="width: 95%"></span>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-top">
+                <span>PHP / MySQL</span>
+              </div>
+              <div class="skill-line">
+                <span style="width: 75%">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<!-- Resume -->
+
+
+      <section class="section section-grey" id="resume">
+        <div class="container cv-intro">
+          <h2 class="title-section">Resume</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente iure repellat eaque est molestiae dolore vitae numquam. </p>
+          <a href="#" class="btn-green">Download resume</a>
+        </div>
+      </section>
+
+
+<!-- Education -->
+
+
+      <section class="section section-light" id="cv">
+        <div class="container">
+          <div class="flex">
+            <div class="cv-text">
+              <h3 class="cv-sub">My Education</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet, modi obcaecati fuga numquam. elit. Dolor amet, modi obcaecati fuga numquam.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet, modi obcaecati fuga numquam.</p>
+            </div>
+
+            <div>
+              <article class="cv-item">
+                <h4>Graphic Design Diploma</h4>
+                  <span class="cv-meta">Reeves College / June 2008 – May 2010 </span>
+                  <span class="cv-label">4.0 GPA</span>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil atque totam, veritatis praesentium deleniti. </p>
+                </article>
+
+                <article class="cv-item">
+                  <h4>Cit diploma</h4>
+                  <span class="cv-meta">Lethbridge College / June 2006 - May 2008 </span>
+                  <span class="cv-label">4.0 GPA</span>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde pariatur quia deleniti! </p>
+                </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<!-- Work experience -->
+
+
+      <section class="section section-light">
+        <div class="container">
+          <div class="cv-section">
+            <div class="cv-text">
+              <h3 class="cv-sub">Work Experience</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet, modi obcaecati fuga numquam. elit. Dolor amet, modi obcaecati fuga numquam.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet, modi obcaecati fuga numquam.</p>
+            </div>
+
+            <div class="cv-items">
+                <article class="cv-item">
+                  <h4>Lead Web Designer</h4>
+                  <span class="cv-meta">ABC Company, Saskatoon / June 2011 - Present</span>
+                  <span class="cv-label">3 Years</span>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsa nihil. </p>
+                </article>
+
+                <article class="cv-item">
+                  <h4>Junior Designer</h4>
+                  <span class="cv-meta">XYZ Company, Lethbridge / June 2008 - May 2009</span>
+                  <span class="cv-label">1 Year</span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt excepturi. </p>
+                </article>
+
+                <article class="cv-item">
+                  <h4>Web Developer</h4>
+                  <span class="cv-meta">The Company, Lethbridge / June 2007 - May 2008</span>
+                  <span class="cv-label">1 Year</span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt excepturi.</p>
+                </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<!-- Testi -->
+
+
+      <section class="section section-grey">
+        <div class="container quote">
+          <p class="quote-text">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem repellendus illum voluptatem quam harum. Eum, repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem repellendus illum voluptatem quam harum. Eum, repellat.” </p>
+          <span class="quote-name">John Stone</span>
+          <div class="slider-points">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+
+
+<!-- Portfolio -->
+
+
+      <section class="section" id="portfolio">
+        <div class="container">
+          <h2 class="title-section title-center">Portfolio</h2>
+          <p class="text-section text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem repellendus illum voluptatem quam harum.</p>
+            <div class="work-right">
+              <figure class="work-card">
+                <div class="work">
+                  <div class="work-left">
+                  <h4>Filter by Category</h4>
+                  <ul>
+                    <li class="active">All</li>
+                    <li>Branding</li>
+                    <li>Web Design</li>
+                    <li>Illustration</li>
+                  </ul>
+                </div>
+              </figure>
+              <figure class="work-card">
+                <img src="./assets/images/illustrations/img00.jpg" alt="Work 2" />
+              </figure>
+              <figure class="work-card">
+                <img src="./assets/images/illustrations/img01.jpg" alt="Work 3" />
+              </figure>
+              <figure class="work-card">
+                <img src="./assets/images/illustrations/img02.jpg" alt="Work 4" />
+              </figure>
+              <figure class="work-card">
+                <img src="./assets/images/illustrations/img03.jpg" alt="Work 5" />
+              </figure>
+              <figure class="work-card">
+                <img src="./assets/images/illustrations/img04.jpg" alt="Work 6" />
+              </figure>
+              <figure class="work-card">
+                <img src="./assets/images/illustrations/img05.jpg" alt="Work 7" />
+              </figure>
+              <figure class="work-card">
+                <img src="./assets/images/illustrations/img06.jpg" alt="Work 8" />
+              </figure>
+              <figure class="work-card">
+                <img src="./assets/images/illustrations/img07.jpg" alt="Work 9" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<!-- Contact -->
+
+
+      <section class="section section-dark" id="contact">
+        <div class="container contact">
+          <div class="contact-left">
+            <h2 class="title-section title-light">Contact Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, distinctio enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, distinctio enim.</p>
+
+            <ul class="contact-list">
+              <li>123 33rd Street East</li>
+              <li>Saaskatoon, SK</li>
+              <li>S7K 1R9</li>
+              <li><strong>Tél :</strong> +33 6 00 00 00 00</li>
+              <li><strong>Email :</strong> contact@example.com</li>
+            </ul>
+          </div>
+
+          <form class="contact-form">
+            <label for="name">Name *</label>
+            <input type="text" id="name"/>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email"/>
+
+            <label for="email2">Email Address *</label>
+            <input type="text" id="email2"/>
+            <textarea rows="6"></textarea>
+
+            <div class="flex">
+                <button type="submit" class="btn btn-black">Contact Me</button>
+            </div>
+          </form>
+        </div>
+
+        <footer class="footer">
+          <p>© COPYRIGHT 2014 FOCAL - BUILT WITH PASSION.</p>
+
+          <div class="contact-social">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        </footer>
+      </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>

@@ -1,0 +1,58 @@
+@use '../_layout.scss' as *;
+
+.work {
+  display: grid;
+  grid-template-columns: 0.9fr 2.1fr;
+  gap: 2.3rem;
+  margin-top: 2.5rem;
+  margin-left: 20px;
+  color: $text;
+
+  .work-left {
+    h4 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.8rem;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        font-size: 0.83rem;
+        padding: 0.2rem 0;
+        cursor: pointer;
+        
+        &.active {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.work-card {
+  background: $dark-soft;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+  }
+
+  h4 {
+    color: $white;
+  }
+}
+
+.work-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
