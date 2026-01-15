@@ -1,0 +1,10 @@
+@use 'text' as t;
+
+p  { @include t.text(p1) }
+h1 { @include t.text(h1) }
+h2 { @include t.text(h2) }
+h3 { @include t.text(h3) }
+h4 { @include t.text(h4) }
+
+h5 { @include t.text(h5) }
+h5:hover { font-weight: bold; }

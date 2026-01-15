@@ -1,0 +1,15 @@
+@use "sass:color";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+$font-body: 'Montserrat', sans-serif;
+$font-title: 'Oswald', sans-serif;
+
+$blue-primary: #1c292d;
+$beige-primary: #f9e5c8;
+$white-primary: #ffffff;
+$brown-primary: #84674a;
+
+$blue-primary-darken: color.adjust($blue-primary, $lightness: -5%);
+$white-primary-darken: color.adjust($white-primary, $lightness: -30%);

@@ -1,0 +1,58 @@
+@use '../variables' as v;
+@use '../utils' as u;
+
+.promotions {
+  h3 {
+    display: flex;
+    justify-content: center;
+    background-color: v.$blue-primary-darken;
+  }
+
+  .imgs-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include u.gap(3);
+    position: relative; 
+    z-index: 1;
+    padding-top: 85px;
+    background-color: v.$blue-primary-darken;
+    padding-bottom: 45px;
+
+    img {
+      max-width: 430px;
+      position: relative;
+      z-index: 5;
+    }
+
+    &::after {
+      content: "";
+      top: 0;
+      position: absolute;
+      width: 100%;
+      height: 40%;
+      background-color: v.$beige-primary;
+    }
+  }
+
+  .texts-row {
+    display: flex;
+    justify-content: center;
+    @include u.gap(9);
+
+    p, h4 {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    h4 {
+      margin: 25px 0px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

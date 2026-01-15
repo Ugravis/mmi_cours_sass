@@ -1,0 +1,142 @@
+@use '../utils' as u;
+@use '../variables' as v;
+
+.coffees-presentation {
+  display: flex;
+  flex-direction: column;
+  @include u.gap(10);
+  margin-top: 200px;
+
+  .coffees-presentation-card {
+    display: flex;
+    align-items: stretch;
+
+    &:last-of-type {
+      .menu-box {
+        background-color: v.$beige-primary;
+      }
+    }
+
+    .coffees-presentation-text-box {
+      display: flex;
+      flex-direction: column;
+      @include u.gap(1);
+      background-color: v.$blue-primary-darken;
+      padding: 80px;
+      margin: 120px 0px;
+      width: 100%;
+      position: relative;
+
+      p {
+        max-width: 500px;
+      }
+    }
+
+    .coffees-presentation-image {
+      min-width: 49vw;
+      aspect-ratio: 1/1.2;
+    }
+
+    .line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      div {
+        width: 30px;
+        height: 730px;
+        background-color: v.$beige-primary;
+      }
+    }
+
+    .exceeding-right::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 65px;
+      background-color: v.$blue-primary-darken;
+      right: -65px;
+      bottom: 0;
+    }
+
+    .exceeding-right-beige::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 65px;
+      background-color: v.$beige-primary;
+      right: -65px;
+      bottom: 0;
+    }
+    
+    .exceeding-left::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 65px;
+      background-color: v.$blue-primary-darken;
+      left: -65px;
+      bottom: 0;
+    }
+  }
+
+  //
+
+  .img-cont {
+    background: url('../../images/illustrations/coffeess-presentation4.png') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    min-width: 85vw;
+    aspect-ratio: 16/9;
+    
+    .text-box {
+      display: flex;
+      flex-direction: column;
+      padding: 80px;
+
+      p {
+        max-width: 500px;
+      }
+    }
+  }
+
+  .img-cont-sub {
+    position: relative;
+
+    .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: v.$beige-primary;
+      bottom: 0;
+      z-index: -1;
+      transform: translateX(100%);
+      height: 120%;
+    }
+  }
+}
+
+//
+
+.menu-box {
+  display: flex;
+  @include u.gap(6);
+  background-color: v.$blue-primary-darken;
+  padding: 80px;
+  margin: 120px 0px;
+  width: 100%;
+  position: relative;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include u.gap(3);
+  }
+
+  .sep {
+    width: 6px;
+    height: 100%;
+    background-color: v.$brown-primary;
+  }
+}

@@ -1,0 +1,24 @@
+@use '../variables' as v;
+@use '../utils' as u;
+
+.navbar {
+  background-color: v.$blue-primary-darken;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  ul {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-around;
+
+    .logo {
+      transform: translateY(-5px);
+    }
+  }
+
+  img {
+    cursor: pointer;
+  }
+}

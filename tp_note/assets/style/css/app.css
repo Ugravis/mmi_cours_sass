@@ -1,0 +1,723 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  display: inline-block;
+}
+
+html {
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  height: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:focus {
+  outline: 0;
+  box-shadow: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.p1 {
+  font-size: 1rem;
+  color: rgb(178.5, 178.5, 178.5);
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-transform: none;
+  font-style: none;
+  line-height: normal;
+}
+
+.p1-brown {
+  font-size: 1rem;
+  color: #84674a;
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-transform: none;
+  font-style: none;
+  line-height: normal;
+}
+
+.p2 {
+  font-size: 0.85rem;
+  color: #f9e5c8;
+  font-family: "Montserrat";
+  font-weight: normal;
+  text-transform: none;
+  font-style: italic;
+  line-height: normal;
+}
+
+.h1 {
+  font-size: 9.2rem;
+  color: #f9e5c8;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: none;
+  line-height: 0.9;
+}
+
+.h1-b {
+  font-size: 7.3rem;
+  color: #f9e5c8;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: none;
+  line-height: 1;
+}
+
+.h2 {
+  font-size: 3.8rem;
+  color: #f9e5c8;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: none;
+  line-height: 0.4;
+}
+
+.h2-b {
+  font-size: 4.5rem;
+  color: #f9e5c8;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: none;
+  line-height: normal;
+}
+
+.h2-c {
+  font-size: 3.8rem;
+  color: #84674a;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: none;
+  line-height: normal;
+}
+
+.h3 {
+  font-size: 3.5rem;
+  color: #f9e5c8;
+  font-family: "Oswald";
+  font-weight: 200;
+  text-transform: none;
+  font-style: none;
+  line-height: normal;
+}
+
+.h4 {
+  font-size: 1.45rem;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: none;
+  line-height: normal;
+}
+
+.h4-b {
+  font-size: 2rem;
+  color: #84674a;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: none;
+  font-style: none;
+  line-height: normal;
+}
+
+.h5 {
+  font-size: 0.85rem;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: normal;
+  text-transform: uppercase;
+  font-style: none;
+  line-height: normal;
+}
+
+.special-title-h1 h1, .special-title-h1 h2 {
+  display: flex;
+  flex-direction: column;
+}
+.special-title-h1 span {
+  font-size: 7.3rem;
+  color: #f9e5c8;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: none;
+  line-height: 1;
+}
+
+.special-title-h2 h1, .special-title-h2 h2 {
+  display: flex;
+  flex-direction: column;
+}
+.special-title-h2 span {
+  font-size: 4.5rem;
+  color: #f9e5c8;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: none;
+  line-height: normal;
+}
+
+.gap-1 {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.gap-2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.gap-3 {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.gap-4 {
+  display: flex;
+  gap: 2rem;
+}
+
+.gap-5 {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.gap-6 {
+  display: flex;
+  gap: 3rem;
+}
+
+.gap-7 {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.gap-8 {
+  display: flex;
+  gap: 4rem;
+}
+
+.gap-9 {
+  display: flex;
+  gap: 4.5rem;
+}
+
+.gap-10 {
+  display: flex;
+  gap: 5rem;
+}
+
+.margin-1 {
+  display: flex;
+  margin: 0.5rem;
+}
+
+.margin-2 {
+  display: flex;
+  margin: 1rem;
+}
+
+.margin-3 {
+  display: flex;
+  margin: 1.5rem;
+}
+
+.margin-4 {
+  display: flex;
+  margin: 2rem;
+}
+
+.margin-5 {
+  display: flex;
+  margin: 2.5rem;
+}
+
+.margin-6 {
+  display: flex;
+  margin: 3rem;
+}
+
+.margin-7 {
+  display: flex;
+  margin: 3.5rem;
+}
+
+.margin-8 {
+  display: flex;
+  margin: 4rem;
+}
+
+.margin-9 {
+  display: flex;
+  margin: 4.5rem;
+}
+
+.margin-10 {
+  display: flex;
+  margin: 5rem;
+}
+
+.cont-padding {
+  padding: 15px 0px;
+}
+
+.cont-margin {
+  margin: 70px 0px;
+}
+
+p {
+  font-size: 1rem;
+  color: rgb(178.5, 178.5, 178.5);
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-transform: none;
+  font-style: none;
+  line-height: normal;
+}
+
+h1 {
+  font-size: 9.2rem;
+  color: #f9e5c8;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: none;
+  line-height: 0.9;
+}
+
+h2 {
+  font-size: 3.8rem;
+  color: #f9e5c8;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: none;
+  line-height: 0.4;
+}
+
+h3 {
+  font-size: 3.5rem;
+  color: #f9e5c8;
+  font-family: "Oswald";
+  font-weight: 200;
+  text-transform: none;
+  font-style: none;
+  line-height: normal;
+}
+
+h4 {
+  font-size: 1.45rem;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: none;
+  line-height: normal;
+}
+
+h5 {
+  font-size: 0.85rem;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: normal;
+  text-transform: uppercase;
+  font-style: none;
+  line-height: normal;
+}
+
+h5:hover {
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: rgb(18.2191780822, 26.6780821918, 29.2808219178);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+.navbar ul .logo {
+  transform: translateY(-5px);
+}
+.navbar img {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 200px;
+}
+
+.vertical-separator {
+  width: 2px;
+  height: 665px;
+  background-color: #ffffff;
+  margin-left: 100px;
+}
+
+.hero {
+  display: flex;
+}
+.hero .hero-left {
+  position: relative;
+  width: 85%;
+  background: url("../../images/illustrations/hero.png") no-repeat center/cover;
+  aspect-ratio: 16/9;
+}
+.hero .hero-left .text-box-sub {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.hero .hero-left .text-box-sub .text-box {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem;
+  gap: 1.5rem;
+}
+
+.promotions h3 {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(18.2191780822, 26.6780821918, 29.2808219178);
+}
+.promotions .imgs-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+  padding-top: 85px;
+  background-color: rgb(18.2191780822, 26.6780821918, 29.2808219178);
+  padding-bottom: 45px;
+}
+.promotions .imgs-row img {
+  max-width: 430px;
+  position: relative;
+  z-index: 5;
+}
+.promotions .imgs-row::after {
+  content: "";
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background-color: #f9e5c8;
+}
+.promotions .texts-row {
+  display: flex;
+  justify-content: center;
+  gap: 4.5rem;
+}
+.promotions .texts-row p, .promotions .texts-row h4 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.promotions .texts-row h4 {
+  margin: 25px 0px;
+}
+.promotions .texts-row div {
+  display: flex;
+  flex-direction: column;
+}
+
+.coffees-presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-top: 200px;
+}
+.coffees-presentation .coffees-presentation-card {
+  display: flex;
+  align-items: stretch;
+}
+.coffees-presentation .coffees-presentation-card:last-of-type .menu-box {
+  background-color: #f9e5c8;
+}
+.coffees-presentation .coffees-presentation-card .coffees-presentation-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: rgb(18.2191780822, 26.6780821918, 29.2808219178);
+  padding: 80px;
+  margin: 120px 0px;
+  width: 100%;
+  position: relative;
+}
+.coffees-presentation .coffees-presentation-card .coffees-presentation-text-box p {
+  max-width: 500px;
+}
+.coffees-presentation .coffees-presentation-card .coffees-presentation-image {
+  min-width: 49vw;
+  aspect-ratio: 1/1.2;
+}
+.coffees-presentation .coffees-presentation-card .line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coffees-presentation .coffees-presentation-card .line div {
+  width: 30px;
+  height: 730px;
+  background-color: #f9e5c8;
+}
+.coffees-presentation .coffees-presentation-card .exceeding-right::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 65px;
+  background-color: rgb(18.2191780822, 26.6780821918, 29.2808219178);
+  right: -65px;
+  bottom: 0;
+}
+.coffees-presentation .coffees-presentation-card .exceeding-right-beige::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 65px;
+  background-color: #f9e5c8;
+  right: -65px;
+  bottom: 0;
+}
+.coffees-presentation .coffees-presentation-card .exceeding-left::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 65px;
+  background-color: rgb(18.2191780822, 26.6780821918, 29.2808219178);
+  left: -65px;
+  bottom: 0;
+}
+.coffees-presentation .img-cont {
+  background: url("../../images/illustrations/coffeess-presentation4.png") no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  min-width: 85vw;
+  aspect-ratio: 16/9;
+}
+.coffees-presentation .img-cont .text-box {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+}
+.coffees-presentation .img-cont .text-box p {
+  max-width: 500px;
+}
+.coffees-presentation .img-cont-sub {
+  position: relative;
+}
+.coffees-presentation .img-cont-sub .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f9e5c8;
+  bottom: 0;
+  z-index: -1;
+  transform: translateX(100%);
+  height: 120%;
+}
+
+.menu-box {
+  display: flex;
+  gap: 3rem;
+  background-color: rgb(18.2191780822, 26.6780821918, 29.2808219178);
+  padding: 80px;
+  margin: 120px 0px;
+  width: 100%;
+  position: relative;
+}
+.menu-box .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.menu-box .sep {
+  width: 6px;
+  height: 100%;
+  background-color: #84674a;
+}
+
+body {
+  background-color: #1c292d;
+  font-size: 1rem;
+  color: rgb(178.5, 178.5, 178.5);
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-transform: none;
+  font-style: none;
+  line-height: normal;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+}
+
+.page-container {
+  margin: 0px 3%;
+}
+
+/*# sourceMappingURL=app.css.map */

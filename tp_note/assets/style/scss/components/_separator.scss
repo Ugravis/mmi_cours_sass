@@ -1,0 +1,8 @@
+@use '../variables' as v;
+
+.vertical-separator {
+  width: 2px;
+  height: 665px;
+  background-color: v.$white-primary;
+  margin-left: 100px;
+}

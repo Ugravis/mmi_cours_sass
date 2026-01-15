@@ -1,0 +1,69 @@
+@use 'variables' as v;
+@use "sass:map";
+
+$texts-map: (
+  p1: (size: 1rem, family: 'Montserrat', color: v.$white-primary-darken),
+  p1-brown: (size: 1rem, family: 'Montserrat', color: v.$brown-primary),
+  p2: (size: 0.85rem, family: 'Montserrat', color: v.$beige-primary, weight: normal, transform: none, style: italic),
+
+  h1: (size: 9.2rem, family: 'Oswald', color: v.$beige-primary, weight: 700, transform: uppercase, style: none, line-height: 0.9),
+  h1-b: (size: 7.3rem, family: 'Oswald', color: v.$beige-primary, weight: 700, transform: uppercase, style: none, line-height: 1),
+  
+  h2: (size: 3.8rem, family: 'Oswald', color: v.$beige-primary, weight: 700, transform: uppercase, style: none, line-height: 0.4),
+  h2-b: (size: 4.5rem, family: 'Oswald', color: v.$beige-primary, weight: 700, transform: uppercase),
+  h2-c: (size: 3.8rem, family: 'Montserrat', color: v.$brown-primary, weight: 700, transform: uppercase),
+  
+  h3: (size: 3.5rem, family: 'Oswald', color: v.$beige-primary, weight: 200),
+
+  h4: (size: 1.45rem, family: 'Montserrat', color: v.$white-primary, weight: 700, transform: uppercase),
+  h4-b: (size: 2rem, family: 'Oswald', color: v.$brown-primary, weight: 700, transform: none),
+
+  h5: (size: 0.85rem, family: 'Montserrat', color: v.$white-primary, weight: normal, transform: uppercase)
+);
+
+$text-defaults: (
+  family: 'Montserrat',
+  color: v.$white-primary,
+  weight: 400,
+  transform: none,
+  style: none,
+  line-height: normal
+);
+
+@mixin text-from-map($row) {
+  $merged: map.merge($text-defaults, $row);
+
+  font-size: map.get($merged, size);
+  color: map.get($merged, color);
+  font-family: map.get($merged, family);
+  font-weight: map.get($merged, weight);
+  text-transform: map.get($merged, transform);
+  font-style: map.get($merged, style);
+  line-height: map.get($merged, line-height);
+}
+
+@each $name, $row in $texts-map {
+  .#{$name} {
+    @include text-from-map($row);
+  }
+}
+
+@mixin text($name) {
+  @include text-from-map(map.get($texts-map, $name))
+}
+
+//
+
+@mixin special-title($type) {
+  h1, h2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  span {
+    @include text($type)
+  }
+}
+
+.special-title-h1 { @include special-title(h1-b); }
+.special-title-h2 { @include special-title(h2-b); }

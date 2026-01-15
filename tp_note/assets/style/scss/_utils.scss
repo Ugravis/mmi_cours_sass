@@ -1,0 +1,29 @@
+@mixin gap($i) {
+  gap: $i * 0.5rem;
+}
+
+@for $i from 1 through 10 {
+  .gap-#{$i} {
+    display: flex;
+    @include gap($i);
+  }
+}
+
+@mixin margin($i) {
+  margin: $i * 0.5rem;
+}
+
+@for $i from 1 through 10 {
+  .margin-#{$i} {
+    display: flex;
+    @include margin($i);
+  }
+}
+
+.cont-padding {
+  padding: 15px 0px;
+}
+
+.cont-margin {
+  margin: 70px 0px;
+}
